@@ -4,26 +4,40 @@
 @import "neat/neat";
 @import "font";
 
-$special_color: #CCC2CD;
+//$special_color: #cfffcf;
+//$special_color: #25AAE1;
+$special_color: #f9c1b7;
+$vision_color: $special_color;
+$mission_color: lighten($special_color, 10%);
+//$special_color: #ffefcc;
 $menu_border_color: #3F382E;
 $menu_height: 15.1875em;
 $purple_font: #5c0e64;
+$nav_background: #b2b2b2;
+$minig_logo_height: 126px;
 
 /***********************************************************************************************************
                                               Body
 ************************************************************************************************************/
 body{
- background-color: tan;
+ @include outer-container;
+ //background-color: #a8e3f7;
+ //background-color: #b7eff9; Blue
+ //background-color: #7DD7F5;
+ background-color: white;
+ opacity: 80%;
 }
 
 /***********************************************************************************************************
                                               Header
 ************************************************************************************************************/
-.name { 
-  font-family: ambrielbold_italic, Arial, sans-serif; 
+.name {
+  font-family: Ariel, sans-serif; 
   text-align: center;
   font-size: 2.9em;
-  padding: 15px 0px 15px;
+  padding: 0px;
+  height: $minig_logo_height + 20px;
+  margin-top: 20px;
 }
 
 .facebook{
@@ -31,6 +45,18 @@ body{
 }
 .facebook:hover{
   background-image: url('facebookicon.png');
+}
+
+header .mining{
+  @include span-columns(1.57);
+  @include omega;
+  background: url(/images/MiningPickHeader.png);
+  height: $minig_logo_height;
+}
+
+header .logo{
+  @include span-columns(10.43);
+  line-height: $minig_logo_height;
 }
 
 /***********************************************************************************************************
@@ -41,27 +67,24 @@ header#page{
 }
 
 aside{
-  @include span-columns(3);
+  @include span-columns(12);
   nav{
-    .window{
-      width: 100%;
-    }
-    .menu{
-      background-color: $special_color;
-      text-align: center;
-      font-size: 1.5em; 
-      color: #453833;
-      border-color: $menu_border_color;
-      border-style: solid;
-      border-width: 0px 1px 1px 1px;
-      /*border-left: #554845 solid 1px;
-      border-right: #554845 solid 1px;
-      border-bottom: #554845 solid 1px;*/
-      margin-top: -3px;
-      ul{line-height: 1.5}
-      ul li:first{padding-top: 10px;}
-      ul li:last{padding-bottom:10px;}
-    }
+    background-color: $special_color;
+    text-align: center;
+    font-size: 1.5em; 
+    font-family: Ariel, sans-serif;
+    background-color: $nav_background;
+    border-color: $menu_border_color;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    /*border-left: #554845 solid 1px;
+    border-right: #554845 solid 1px;
+    border-bottom: #554845 solid 1px;*/
+    margin-top: -3px;
+    ul{line-height: 1.5}
+    ul li{display: inline;} 
+    ul li{padding-left: 20px;
+          padding-right: 20px;}
     a:link {}
     a:visited {}
     a:hover {}
@@ -76,16 +99,17 @@ aside{
 }
 
 section{
-  &.special{
-    img{
-      float: left;
-    }
-    @include span-columns(9);
+  &.vision{
+    @include span-columns(12);
     text-align: center;
-    float: right;
-    //padding-top: 11px;
-    margin-top: 71px;
-    background-color: $special_color;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    background-color: $vision_color;
+    font-size: 1.8em;
+    font-family: Ariel, sans-serif;
 
     #full-special{display:block;}
     #mobile-special{display:none;}
@@ -113,9 +137,9 @@ section{
 
   }
   &.mission{
-    @include span-columns(9);
+    @include span-columns(12);
     min-height:100%;
-    background-color: $special_color;
+    background-color: $mission_color;
     .title{
       font-size: 1.8em;
     }
@@ -158,7 +182,7 @@ section{
 main{
   clear: both;
   @include outer-container;
-  .storerotator{}
+  background-color: #f9c1b7;
 
 .flexslider{
   margin-top: 37px;
@@ -279,7 +303,7 @@ footer{
   }
 }
 
-.rightCol{
+.facebook{
   @include span-columns(4);
   @include omega();
   float:right;
@@ -293,7 +317,7 @@ footer{
   }
 }
 
-.facebook{
+/*.facebook{
   text-align: center;
   padding-top: 10px;
   @include span-columns(4);
@@ -304,7 +328,7 @@ footer{
     @include span-columns(4);
     clear:both;
   }
-}
+}*/
 
     /*%a{:href => "http://www.facebook.com/centraltheaterwine"}
        %img{:src => "images/facebookicon.png"}*/
