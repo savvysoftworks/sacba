@@ -1,30 +1,16 @@
----
-title: Central Theater
----
 %header#page
   %aside
     = partial "menu"
-  %section.special
-    %img#full-special{:alt => "Wine of the Month Special", :src => "images/monthwine.jpeg" }
-    %p.title
-      Wine of the Month <br>
-      August 2014
-    %p.wine
-      Green Apple
-
-
 %main
-  .flexslider
-    %ul.slides
-      %li
-        %img{:src => "images/IMG_0038.JPG"}/
-      %li
-        %img{:src => "images/IMG_0042.JPG"}/
-      %li
-        %img{:src => "images/IMG_0048.JPG"}/
-      %li
-        %img{:src => "images/IMG_0054.JPG"}/
-      %li
-        %img{:src => "images/IMG_0068.JPG"}/
-      %li
-        %img{:src => "images/IMG_0077.JPG"}/
+  %section.page.vision#vision
+    = partial "vision"
+
+  %section.page.video
+    //insert embedded YouTube video here once completed
+  %section.page.mission#mission
+    = partial "mission"
+
+
+
+
+
