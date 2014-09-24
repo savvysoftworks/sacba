@@ -15,6 +15,8 @@ $menu_height: 15.1875em;
 $purple_font: #5c0e64;
 $nav_background: #b2b2b2;
 $minig_logo_height: 126px;
+$antique_olive_green: #5C6F56;
+$antique_burnt_orange: #B7612E;
 
 /***********************************************************************************************************
                                               Body
@@ -34,10 +36,12 @@ body{
 .name {
   font-family: Ariel, sans-serif; 
   text-align: center;
-  font-size: 2.9em;
-  padding: 0px;
+  font-size: 1.9em;
+  padding: 10px 0 0 10px;
   height: $minig_logo_height + 20px;
   margin-top: 20px;
+  background-color: $antique_olive_green;
+  font-family: chunkfiveregular;
 }
 
 .facebook{
@@ -48,15 +52,25 @@ body{
 }
 
 header .mining{
-  @include span-columns(1.57);
+  @include span-columns(1.58);
   @include omega;
   background: url(/images/MiningPickHeader.png);
   height: $minig_logo_height;
 }
 
 header .logo{
-  @include span-columns(10.43);
-  line-height: $minig_logo_height;
+  line-height: $minig_logo_height/2;
+  font-size: 2.9em;
+  @include span-columns(10.42);
+  text-align: left;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+}
+
+header .sublogo{
+  padding-right: 0.2em;
+  text-align: right;
+  @include span-columns(10.42);
 }
 
 /***********************************************************************************************************
@@ -72,7 +86,6 @@ aside{
     background-color: $special_color;
     text-align: center;
     font-size: 1.5em; 
-    font-family: Ariel, sans-serif;
     background-color: $nav_background;
     border-color: $menu_border_color;
     border-style: solid;
@@ -85,9 +98,16 @@ aside{
     ul li{display: inline;} 
     ul li{padding-left: 20px;
           padding-right: 20px;}
+    li a {
+      font-family: chunkfiveregular;
+      text-decoration: none;
+      color: $antique_olive_green;
+    }
     a:link {}
     a:visited {}
-    a:hover {}
+    a:hover {
+      color: $antique_burnt_orange;
+    }
     a:active {} 
   }
   @include media($mobile){
