@@ -156,14 +156,19 @@ p.date{
   font-family: Times; 
   font-size: 1.5em;
   margin-left: 275px;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 p.event{
   font-family: Times; 
   font-size: 1.5em;
-  margin-left: 275px;
-  margin-top: 5px;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  margin-top: 15px;
+}
+
+p.flyer{
+  padding-top: 10px;
 }
 
 p.lastEvent{
@@ -184,7 +189,7 @@ section{
     min-height:100%;
     background-color: $mission_color;
     .title{
-      padding: 0.8em;
+      padding-top: 0.8em;
       font-size: 1.8em;
     }
     .statement{
@@ -196,7 +201,7 @@ section{
       @include span-columns(4);
     }
     @include omega();
-    border: 1px solid red;
+    border: 1px solid $antique_burnt_orange;
   }
 }
 
@@ -207,8 +212,20 @@ section.vision{
   }
 }
 
+p.vision{
+  font-size: 1.3em;
+  padding-left: 1.8em;
+  padding-right:1.8em;
+}
+
 section.mission{
   background-color: $mission_color;
+}
+
+p.mission{
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  font-size: 1.3em;
 }
 
 section.members{
