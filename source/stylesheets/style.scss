@@ -161,14 +161,14 @@ p.date{
 
 p.event{
   font-family: Times; 
-  font-size: 1.5em;
+  font-size: 1.3em;
   padding-left: 1.8em;
   padding-right: 1.8em;
   margin-top: 15px;
 }
 
 p.flyer{
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 p.lastEvent{
@@ -246,6 +246,28 @@ p.members{
   padding-bottom: 5px;
 }
 
+section.businesses{
+  .names{
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+  a:link {
+    text-decoration: none;
+    color: $antique_olive_green;
+    }
+    a:visited {
+      color: $antique_olive_green;
+    }
+    a:hover {
+      color: $antique_burnt_orange;
+    }
+    a:active {} 
+    .names{
+      padding-top: 8px;
+    }
+}
+
+
 section.events{
   background-color: $events_color;
 }
@@ -255,9 +277,19 @@ section.contact{
 }
 
 section.history{
+   @include outer-container;
+  .picture{
+    @include span-columns(6);
+    border: black solid 1px;
+  }
   background-color: $history_color;
 }
-
+p.historytext{
+  @include span-columns(6);
+  font-size: 1.3em;
+  padding-right: 15px;
+  text-align: justify;
+}
 
 footer{
   @include outer-container;
