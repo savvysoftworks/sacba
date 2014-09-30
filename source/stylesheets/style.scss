@@ -9,6 +9,10 @@
 $special_color: #f9c1b7;
 $vision_color: $special_color;
 $mission_color: lighten($special_color, 10%);
+$members_color: $special_color;
+$contact_color: darken($special_color, 10%);
+$events_color: darken($special_color, 15%);
+$history_color: lighten($special_color, 15%);
 //$special_color: #ffefcc;
 $menu_border_color: #3F382E;
 $menu_height: 15.1875em;
@@ -34,7 +38,7 @@ body{
                                               Header
 ************************************************************************************************************/
 .name {
-  font-family: Ariel, sans-serif; 
+  font-family: Times, serif; 
   text-align: center;
   font-size: 1.9em;
   padding: 10px 0 0 10px;
@@ -74,7 +78,7 @@ header .sublogo{
 }
 
 /***********************************************************************************************************
-                                 Menu    rightBox: special, mission, protator, erotator
+                                          Menu    
 ************************************************************************************************************/
 header#page{
   @include outer-container;
@@ -118,84 +122,6 @@ aside{
     }
 }
 
-section{
-  &.vision{
-    @include span-columns(12);
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    padding: 15px;
-    margin-top: 25px;
-    background-color: $vision_color;
-    font-size: 1.8em;
-    font-family: Ariel, sans-serif;
-
-    #full-special{display:block;}
-    #mobile-special{display:none;}
-
-    @include media($mobile){
-      #full-special{display:none;}
-      #mobile-special{display:block;}
-      @include span-columns(4);
-    }
-    @include omega();
-
-    p.title{
-      text-align: center;
-      padding-top: 15px;
-      color: $purple_font;
-      font-size: 2.0em;
-    }
-
-    p.wine{
-      text-align: center;
-      padding-top: 15px;
-      color: $purple_font;
-      font-size: 2.0em;
-    }
-
-  }
-  &.mission{
-    @include span-columns(12);
-    min-height:100%;
-    background-color: $mission_color;
-    .title{
-      font-size: 1.8em;
-    }
-    .statement{
-      padding: 20px 15px 0px 15px;
-    }
-    padding-top: 2em;
-    padding-bottom: 4.1em;
-    margin-top: 43px;
-    text-align: center;
-    @include media($mobile){
-      @include span-columns(4);
-    }
-    @include omega();
-  }
-  &.protator{
-    @include span-columns(9);
-    @include media($mobile){
-      @include span-columns(4);
-    }
-    @include omega();
-  }
-
-&.erotator{
-    margin-top: 49px;
-    @include span-columns(9);
-    width:71%;
-    @include media($mobile){
-      @include span-columns(4);
-    }
-    @include omega();
-  }
-}
-
-
-
 /***********************************************************************************************************
                                             Main Content
 ************************************************************************************************************/
@@ -207,60 +133,12 @@ main{
 .flexslider{
   margin-top: 37px;
 }
-
-
-  h1{
-  text-align: center;
-  font-size: 2em;
-  }
-  .story{
-    margin-top: 25px;
-    .title{
-      text-align: center;
-      font-size: 1.8em;
-    }
-    .text{
-      text-indent: 1.5em;
-      padding-top: 10px;
-      padding-bottom: 15px;
-    }
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .productlist p {
-    font-size: 1.2em;
-    text-align: center;
-  }
-  p.jd{
-    padding-top: 18px;
-  }
-  p.clovercreek{
-    padding-top: 18px;
-  }
-  p.EmeraldValley{
-    padding-top: 18px;
-  }
-  p.sticky{
-    padding-top: 18px;
-  }
-  p.ToffeeHouse{
-    padding-top: 18px;
-  }
-  p.candle{
-  padding-top: 18px;
-  font-weight: bold;
-  text-decoration: underline;
-  }
-  p.Eric{
-    padding-top: 18px;
-    font-weight: bold;
-    text-decoration: underline;
-  }
 }
 
-.productlist{
-  padding-top: 12px;
-  padding-bottom: 25px;
+
+h1{
+  text-align: center;
+  font-size: 2em;
 }
 
 p.title{
@@ -270,12 +148,6 @@ p.title{
 }
 .italic{
   font-style: italic;
-}
-
-.month{
-  font-family: ambrielbold_italic, Arial, sans-serif; 
-  text-align: center;
-  font-size: 2.2em; 
 }
 
 p.date{
@@ -302,11 +174,74 @@ p.lastEvent{
   padding-bottom: 25px;
 }
 
-
-
 /***********************************************************************************************************
-                                              Footer
+                                               Sections
 ************************************************************************************************************/
+
+section{
+  &.page{
+    @include span-columns(12);
+    min-height:100%;
+    background-color: $mission_color;
+    .title{
+      padding: 0.8em;
+      font-size: 1.8em;
+    }
+    .statement{
+      padding: 20px 15px 0px 15px;
+    }
+    padding: 2.4em 0;
+    text-align: center;
+    @include media($mobile){
+      @include span-columns(4);
+    }
+    @include omega();
+    border: 1px solid red;
+  }
+}
+
+section.vision{
+  background-color: $vision_color;
+  .video{
+    padding: 0.8em;
+  }
+}
+
+section.mission{
+  background-color: $mission_color;
+}
+
+section.members{
+  @include outer-container;
+  .title{
+    padding-top: 10px;
+  }
+  .board{
+    @include span-columns(6);
+  }
+  .committee{
+    @include span-columns(6);
+  }
+  background-color: $members_color;
+}
+
+p.members{
+  padding-bottom: 5px;
+}
+
+section.events{
+  background-color: $events_color;
+}
+
+section.contact{
+  background-color: $contact_color;
+}
+
+section.history{
+  background-color: $history_color;
+}
+
+
 footer{
   @include outer-container;
   border-top: black solid 1px;
@@ -330,25 +265,10 @@ footer{
   padding-top: 10px;
   padding-right: 25px;
   padding-bottom: 15px;
+  padding-left: 50px;
   width: auto;
   @include media($mobile) {
     @include span-columns(2);
     @include omega();
   }
 }
-
-/*.facebook{
-  text-align: center;
-  padding-top: 10px;
-  @include span-columns(4);
-  @include media($mobile) {
-    * {
-      margin:auto;
-    }
-    @include span-columns(4);
-    clear:both;
-  }
-}*/
-
-    /*%a{:href => "http://www.facebook.com/centraltheaterwine"}
-       %img{:src => "images/facebookicon.png"}*/
