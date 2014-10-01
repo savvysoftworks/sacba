@@ -1,0 +1,508 @@
+/* line 1, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 11, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 14, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+body {
+  line-height: 1; }
+
+/* line 17, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+ol, ul {
+  list-style: none; }
+
+/* line 20, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+blockquote, q {
+  quotes: none; }
+
+/* line 24, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+/* line 29, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/reset.css */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 2, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: ambrielbold_italic;
+  src: url("fonts/Ambriel-webfont.eot");
+  src: url("fonts/Ambriel-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Ambriel-webfont.woff") format("woff"), url("fonts/Ambriel-webfont.ttf") format("truetype"), url("fonts/Ambriel-webfont.svg#ambrielbold_italic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: chunkfiveregular;
+  src: url("fonts/chunk-webfont.eot");
+  src: url("fonts/chunk-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/chunk-webfont.woff2") format("woff2"), url("fonts/chunk-webfont.woff") format("woff"), url("fonts/chunk-webfont.ttf") format("truetype"), url("fonts/chunk-webfont.svg#chunkfiveregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+/***********************************************************************************************************
+                                              Body
+************************************************************************************************************/
+/* line 28, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+body {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  opacity: 80%; }
+  /* line 18, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  body:before, body:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  body:after {
+    clear: both; }
+
+/***********************************************************************************************************
+                                              Header
+************************************************************************************************************/
+/* line 40, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+.name {
+  font-family: Times, serif;
+  text-align: center;
+  font-size: 1.9em;
+  padding: 10px 0 0 10px;
+  height: 146px;
+  margin-top: 20px;
+  background-color: #5c6f56;
+  font-family: chunkfiveregular; }
+
+/* line 51, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+.facebook {
+  background: transparent url("fbicongray.png") center top no-repeat; }
+
+/* line 54, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+.facebook:hover {
+  background-image: url("facebookicon.png"); }
+
+/* line 58, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+header .mining {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 11.11944%;
+  margin-right: 0;
+  background: url(/images/MiningPickHeader.png);
+  height: 126px; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  header .mining:last-child {
+    margin-right: 0; }
+
+/* line 65, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+header .logo {
+  line-height: 63px;
+  font-size: 2.9em;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 86.52291%;
+  text-align: left;
+  padding-top: 0.2em;
+  padding-left: 0.2em; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  header .logo:last-child {
+    margin-right: 0; }
+
+/* line 74, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+header .sublogo {
+  padding-right: 0.2em;
+  text-align: right;
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 86.52291%; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  header .sublogo:last-child {
+    margin-right: 0; }
+
+/***********************************************************************************************************
+                                          Menu    
+************************************************************************************************************/
+/* line 83, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+header#page {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 18, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  header#page:before, header#page:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  header#page:after {
+    clear: both; }
+
+/* line 87, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+aside {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  aside:last-child {
+    margin-right: 0; }
+  /* line 89, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  aside nav {
+    background-color: #f9c1b7;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #b2b2b2;
+    border-color: #3f382e;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    /*border-left: #554845 solid 1px;
+    border-right: #554845 solid 1px;
+    border-bottom: #554845 solid 1px;*/
+    margin-top: -3px; }
+    /* line 101, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    aside nav ul {
+      line-height: 1.5; }
+    /* line 102, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    aside nav ul li {
+      display: inline; }
+    /* line 103, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    aside nav ul li {
+      padding-left: 20px;
+      padding-right: 20px; }
+    /* line 105, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    aside nav li a {
+      font-family: chunkfiveregular;
+      text-decoration: none;
+      color: #5c6f56; }
+    /* line 112, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    aside nav a:hover {
+      color: #b7612e; }
+  @media screen and (max-width: 640px) {
+    /* line 87, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    aside {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      clear: both; }
+      /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+      aside:last-child {
+        margin-right: 0; } }
+
+/***********************************************************************************************************
+                                            Main Content
+************************************************************************************************************/
+/* line 128, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+main {
+  clear: both;
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9c1b7; }
+  /* line 18, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  main:before, main:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  main:after {
+    clear: both; }
+  /* line 133, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  main .flexslider {
+    margin-top: 37px; }
+
+/* line 139, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+h1 {
+  text-align: center;
+  font-size: 2em; }
+
+/* line 144, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.title {
+  font-size: 1.6em;
+  font-weight: bold;
+  padding-top: 10px; }
+
+/* line 149, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+.italic {
+  font-style: italic; }
+
+/* line 153, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.date {
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: Times;
+  font-size: 1.5em;
+  margin-left: 275px;
+  margin-top: 5px; }
+
+/* line 162, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.event {
+  font-family: Times;
+  font-size: 1.3em;
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  margin-top: 15px; }
+
+/* line 170, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.flyer {
+  padding-top: 25px; }
+
+/* line 174, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.lastEvent {
+  font-family: Times;
+  font-size: 1.5em;
+  margin-left: 275px;
+  margin-top: 5px;
+  padding-bottom: 25px; }
+
+/***********************************************************************************************************
+                                               Sections
+************************************************************************************************************/
+/* line 187, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.page {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 100%;
+  min-height: 100%;
+  background-color: #fdeae6;
+  padding: 2.4em 0;
+  text-align: center;
+  margin-right: 0;
+  border: 1px solid #b7612e; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  section.page:last-child {
+    margin-right: 0; }
+  /* line 191, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  section.page .title {
+    padding-top: 0.8em;
+    font-size: 1.8em; }
+  /* line 195, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  section.page .statement {
+    padding: 20px 15px 0px 15px; }
+  @media screen and (max-width: 640px) {
+    /* line 187, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    section.page {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 100%; }
+      /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+      section.page:last-child {
+        margin-right: 0; } }
+
+/* line 208, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.vision {
+  background-color: #f9c1b7; }
+  /* line 210, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  section.vision .video {
+    padding: 0.8em; }
+
+/* line 215, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.vision {
+  font-size: 1.3em;
+  padding-left: 1.8em;
+  padding-right: 1.8em; }
+
+/* line 221, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.mission {
+  background-color: #fdeae6; }
+
+/* line 225, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.mission {
+  padding-left: 1.8em;
+  padding-right: 1.8em;
+  font-size: 1.3em; }
+
+/* line 231, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.members {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f9c1b7; }
+  /* line 18, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  section.members:before, section.members:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  section.members:after {
+    clear: both; }
+  /* line 233, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  section.members .title {
+    padding-top: 10px; }
+  /* line 236, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  section.members .board {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+    section.members .board:last-child {
+      margin-right: 0; }
+  /* line 239, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  section.members .committee {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+    section.members .committee:last-child {
+      margin-right: 0; }
+
+/* line 245, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.members {
+  padding-bottom: 5px; }
+
+/* line 250, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.businesses .names {
+  font-size: 1.1em;
+  font-weight: bold; }
+/* line 254, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.businesses a:link {
+  text-decoration: none;
+  color: #5c6f56; }
+/* line 258, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.businesses a:visited {
+  color: #5c6f56; }
+/* line 261, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.businesses a:hover {
+  color: #b7612e; }
+/* line 265, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.businesses .names {
+  padding-top: 8px; }
+
+/* line 271, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.events {
+  background-color: #f38470; }
+
+/* line 275, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.contact {
+  background-color: #f59888; }
+
+/* line 279, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+section.history {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fffefe; }
+  /* line 18, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  section.history:before, section.history:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  section.history:after {
+    clear: both; }
+  /* line 281, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+  section.history .picture {
+    display: block;
+    float: left;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    border: black solid 1px; }
+    /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+    section.history .picture:last-child {
+      margin-right: 0; }
+
+/* line 287, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+p.historytext {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  font-size: 1.3em;
+  padding-right: 15px;
+  text-align: justify; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  p.historytext:last-child {
+    margin-right: 0; }
+
+/* line 294, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+footer {
+  *zoom: 1;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: black solid 1px; }
+  /* line 18, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  footer:before, footer:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/bourbon/addons/_clearfix.scss */
+  footer:after {
+    clear: both; }
+
+/* line 299, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+.leftCol {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  float: left;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-bottom: 15px; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  .leftCol:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    /* line 299, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    .leftCol {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 46.28851%; }
+      /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+      .leftCol:last-child {
+        margin-right: 0; } }
+
+/* line 310, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+.facebook {
+  display: block;
+  float: left;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  margin-right: 0;
+  float: right;
+  padding-top: 10px;
+  padding-right: 25px;
+  padding-bottom: 15px;
+  padding-left: 50px;
+  width: auto; }
+  /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+  .facebook:last-child {
+    margin-right: 0; }
+  @media screen and (max-width: 640px) {
+    /* line 310, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/style.scss */
+    .facebook {
+      display: block;
+      float: left;
+      margin-right: 7.42297%;
+      width: 46.28851%;
+      margin-right: 0; }
+      /* line 33, /Users/neonnightlifess1/websiteprojects/sacba/source/stylesheets/neat/grid/_span-columns.scss */
+      .facebook:last-child {
+        margin-right: 0; } }
